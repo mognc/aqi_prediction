@@ -11,15 +11,15 @@ K
 -
 __dummy"
 __dummy_idJweather_features_store
-Ö¿»À¢ælÖ¿»À¢æl1"$f58aa5d1-2b1c-4b20-b1a9-0a34032b2c26*®ŞĞ»àƒÏ½2ÿ
+Ö¿»À¢ælÖ¿»À¢æl1"$7fb4db5d-f6fe-42cc-9342-a88925a6134a*©âĞ»è¯®2
 ¼
 driver_hourly_statsweather_features_storedriver"
 	conv_rate"
 acc_rate"(
 avg_daily_trips"Average daily trips*
 teamdriver_performance2€£:Ševent_timestamp*createdZdata/driver_stats.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢driver_hourly_stats_source@b
-	driver_id½
-Ö¿»øúúl®ŞĞ»€®¬‚
+	driver_idÛ
+Ö¿»øúúl©âĞ» ½ÙÖ
 ô´º»¥Ÿ“ô×¿»¨òè
 ô×¿»¨òèİì¿»ØßÕj
 İì¿»ØßÕjëˆÀ»›£
@@ -83,7 +83,8 @@ __dummy_idJweather_features_store
 Ã¼Ğ» š€½šÆĞ»¨—¾6
 šÆĞ»¨—¾6÷ÌĞ»èğ•
 ÷ÌĞ»èğ•üİĞ»ˆÉ‰Œ
-üİĞ»ˆÉ‰Œ®ŞĞ»Œ…Ö2–
+üİĞ»ˆÉ‰Œ®ŞĞ»Œ…Ö
+®ŞĞ»Œ…Ö©âĞ»°ßõš2´
 Ó
 weather_featuresweather_features_storecity"
 weather_main"
@@ -113,8 +114,8 @@ clouds_all"
 pm10"
 nh3"
 air_quality_dt2€£:æevent_timestampZNL/home/mognc/airflow/weather_features_store/feature_repo/data/weather.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢L/home/mognc/airflow/weather_features_store/feature_repo/data/weather.parquet@b
-city½
-Ö¿»°ˆ¨m®ŞĞ»À‘‘£
+cityÛ
+Ö¿»°ˆ¨m©âĞ»ˆ×Ì‚
 ô´º»€ÒĞïô×¿»¨òè
 ô×¿»¨òèİì¿»ØßÕj
 İì¿»ØßÕjëˆÀ»›£
@@ -178,15 +179,16 @@ clouds_all"
 Ã¼Ğ» š€½šÆĞ»¨—¾6
 šÆĞ»¨—¾6÷ÌĞ»èğ•
 ÷ÌĞ»èğ•üİĞ»ˆÉ‰Œ
-üİĞ»ˆÉ‰Œ®ŞĞ»Œ…Ö2ˆ
+üİĞ»ˆÉ‰Œ®ŞĞ»Œ…Ö
+®ŞĞ»Œ…Ö©âĞ»°ßõš2¦
 Å
 driver_hourly_stats_freshweather_features_storedriver"
 	conv_rate"
 acc_rate"
 avg_daily_trips*
 teamdriver_performance2€£:Ševent_timestamp*createdZdata/driver_stats.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢driver_hourly_stats_source@J•	Šfeast.data_source.PushSource¢driver_stats_push_sourceÒVevent_timestamp*createdZdata/driver_stats.parquet¢driver_hourly_stats_sourceb
-	driver_id½
-Ö¿»€Ãím®ŞĞ»à‡¤½
+	driver_idÛ
+Ö¿»€Ãím©âĞ»è¶ò­
 ô´º»¨òÏô×¿»¨òè
 ô×¿»¨òèİì¿»ØßÕj
 İì¿»ØßÕjëˆÀ»›£
@@ -250,7 +252,8 @@ clouds_all"
 Ã¼Ğ» š€½šÆĞ»¨—¾6
 šÆĞ»¨—¾6÷ÌĞ»èğ•
 ÷ÌĞ»èğ•üİĞ»ˆÉ‰Œ
-üİĞ»ˆÉ‰Œ®ŞĞ»Œ…Ö:Ö
+üİĞ»ˆÉ‰Œ®ŞĞ»Œ…Ö
+®ŞĞ»Œ…Ö©âĞ»°ßõš:Ö
 ·
 driver_activity_v3weather_features_store·
 driver_hourly_stats_fresh
