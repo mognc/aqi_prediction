@@ -21,11 +21,22 @@ jobs:
           python-version: 3.9
           
 
+      - name: Cache Dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      
+      - name: Intsall grpcio and googleapis
+        run: |
+          pip install grpcio, googleapis-common-protos
+
       - name: Install Dependencies
         run: |
           pip install apache-airflow
           pip install feast
-          pip install grpcio
           pip install -r dags/scripts/requirements.txt
 
       - name: Run Airflow DAG

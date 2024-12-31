@@ -59,7 +59,6 @@ Flask-WTF
 frozenlist
 fsspec
 google-re2
-googleapis-common-protos
 greenlet
 gunicorn
 h11
