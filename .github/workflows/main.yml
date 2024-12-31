@@ -38,7 +38,7 @@ jobs:
         run: |
           pip install apache-airflow
           pip install feast==0.16.0
-          pip install -r dags/scripts/requirements.txt
+#          pip install -r dags/scripts/requirements.txt
 
       - name: Initialize Airflow Database
         run: |
