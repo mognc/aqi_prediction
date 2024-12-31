@@ -61,7 +61,6 @@ fsspec
 google-re2
 googleapis-common-protos
 greenlet
-grpcio
 gunicorn
 h11
 httpcore
