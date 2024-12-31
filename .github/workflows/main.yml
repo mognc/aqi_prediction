@@ -65,7 +65,6 @@ jobs:
           echo "Current Working Directory: $(pwd)"
           ls -R $(pwd)
           ls -R $(pwd)/dags
-          ls -R $(pwd)/scripts
 
       - name: List environment variables
         run: |
