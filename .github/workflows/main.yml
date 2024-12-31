@@ -45,6 +45,21 @@ jobs:
           export AIRFLOW_HOME=$(pwd)/airflow
           airflow db init
 
+      - name: Verify Airflow Installation
+        run: |
+          export AIRFLOW_HOME=$(pwd)/airflow
+          airflow version
+      
+      - name: Verify DAG Presence
+        run: |
+          ls -l $(pwd)/dags
+      
+      - name: List DAG import errors
+        run: |
+          export AIRFLOW_HOME=$(pwd)/airflow
+          export AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/dags
+          airflow dags list-import-errors
+
       - name: List DAGs
         run: |
           export AIRFLOW_HOME=$(pwd)/airflow
