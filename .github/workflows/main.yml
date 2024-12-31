@@ -45,35 +45,9 @@ jobs:
           export AIRFLOW_HOME=$(pwd)/airflow
           airflow db migrate
 
-      - name: Verify Airflow Installation
-        run: |
-          export AIRFLOW_HOME=$(pwd)/airflow
-          airflow version
-      
-      - name: Verify DAG Presence
-        run: |
-          ls -l $(pwd)/dags
-      
-  
-      
-      - name: Verify Directory Structure
-        run: |
-          echo "Current Working Directory: $(pwd)"
-          ls -R $(pwd)
-          ls -R $(pwd)/dags
-
-      - name: List environment variables
-        run: |
-          printenv
-
-      - name: List DAG import errors
-        run: |
-          export AIRFLOW_HOME=$(pwd)/airflow
-          export AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/dags
-          airflow dags list-import-errors
-
       - name: List DAGs
         run: |
+          export AIRFLOW_HOME=$(pwd)/airflow
           dagpath=$(pwd)/dags
           airflow dags list
       
