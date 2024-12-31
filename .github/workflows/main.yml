@@ -59,6 +59,9 @@ jobs:
         run: |
           export AIRFLOW_HOME=$(pwd)/airflow
           export AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/dags
-          dagpath=$(pwd)/dags
           airflow dags trigger feature_and_training_pipeline
+        shell: /usr/bin/bash -e {0}
+        env:
+          AIRFLOW_HOME: ${{ github.workspace }}/airflow
+          AIRFLOW__CORE__DAGS_FOLDER: ${{ github.workspace }}/dags
 
