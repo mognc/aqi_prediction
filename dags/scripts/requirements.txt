@@ -45,7 +45,6 @@ email_validator
 eval_type_backport
 exceptiongroup
 fastapi
-feast
 Flask
 Flask-AppBuilder
 Flask-Babel
