@@ -31,7 +31,8 @@ jobs:
       
       - name: Intsall grpcio and googleapis
         run: |
-          pip install grpcio, googleapis-common-protos
+          pip install grpcio
+          pip install googleapis-common-protos
 
       - name: Install Dependencies
         run: |
