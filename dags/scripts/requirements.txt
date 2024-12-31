@@ -124,7 +124,7 @@ python-dotenv
 python-nvd3
 python-slugify
 pytz
-PyYAML
+#PyYAML
 referencing
 requests
 requests-toolbelt
