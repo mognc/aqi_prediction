@@ -37,13 +37,13 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install apache-airflow
-          pip install feast
+          pip install feast==0.16.0
           pip install -r dags/scripts/requirements.txt
 
       - name: Initialize Airflow Database
         run: |
           export AIRFLOW_HOME=$(pwd)/airflow
-          airflow db init
+          airflow db migrate
 
       - name: Verify Airflow Installation
         run: |
