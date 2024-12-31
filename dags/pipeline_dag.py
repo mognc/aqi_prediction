@@ -1,5 +1,5 @@
 from pathlib import Path
-from dags.scripts.data_processing import collect_and_preprocess
+from scripts.data_processing import collect_and_preprocess
 
 
 from airflow import DAG
