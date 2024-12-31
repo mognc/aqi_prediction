@@ -59,6 +59,17 @@ jobs:
           export AIRFLOW_HOME=$(pwd)/airflow
           export AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/dags
           airflow dags list-import-errors
+      
+      - name: Verify Directory Structure
+        run: |
+          echo "Current Working Directory: $(pwd)"
+          ls -R $(pwd)
+          ls -R $(pwd)/dags
+          ls -R $(pwd)/scripts
+
+      - name: List environment variables
+        run: |
+          printenv
 
       - name: List DAGs
         run: |
