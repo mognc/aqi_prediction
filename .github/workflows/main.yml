@@ -54,11 +54,7 @@ jobs:
         run: |
           ls -l $(pwd)/dags
       
-      - name: List DAG import errors
-        run: |
-          export AIRFLOW_HOME=$(pwd)/airflow
-          export AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/dags
-          airflow dags list-import-errors
+  
       
       - name: Verify Directory Structure
         run: |
@@ -69,6 +65,12 @@ jobs:
       - name: List environment variables
         run: |
           printenv
+
+      - name: List DAG import errors
+        run: |
+          export AIRFLOW_HOME=$(pwd)/airflow
+          export AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/dags
+          airflow dags list-import-errors
 
       - name: List DAGs
         run: |

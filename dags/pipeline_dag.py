@@ -1,10 +1,8 @@
-from pathlib import Path
-from scripts.data_processing import collect_and_preprocess
-
-
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
+from pathlib import Path
+from scripts.data_processing import collect_and_preprocess
 
 # Default arguments
 default_args = {
