@@ -76,11 +76,13 @@ jobs:
         run: |
           export AIRFLOW_HOME=$(pwd)/airflow
           export AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/dags
+          dagpath=$(pwd)/dags
           airflow dags list
       
       - name: Run Airflow DAG
         run: |
           export AIRFLOW_HOME=$(pwd)/airflow
           export AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/dags
+          dagpath=$(pwd)/dags
           airflow dags trigger feature_and_training_pipeline
 
