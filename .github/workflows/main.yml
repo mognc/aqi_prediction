@@ -40,9 +40,20 @@ jobs:
           pip install feast
           pip install -r dags/scripts/requirements.txt
 
-      - name: Run Airflow DAG
+      - name: Initialize Airflow Database
         run: |
           export AIRFLOW_HOME=$(pwd)/airflow
           airflow db init
+
+      - name: List DAGs
+        run: |
+          export AIRFLOW_HOME=$(pwd)/airflow
+          export AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/dags
+          airflow dags list
+      
+      - name: Run Airflow DAG
+        run: |
+          export AIRFLOW_HOME=$(pwd)/airflow
+          export AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/dags
           airflow dags trigger feature_and_training_pipeline
 
