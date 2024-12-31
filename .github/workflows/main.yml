@@ -48,8 +48,12 @@ jobs:
       - name: List DAGs
         run: |
           export AIRFLOW_HOME=$(pwd)/airflow
-          dagpath=$(pwd)/dags
+          export AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/dags
           airflow dags list
+        shell: /usr/bin/bash -e {0}
+        env:
+          AIRFLOW_HOME: ${{ github.workspace }}/airflow
+          AIRFLOW__CORE__DAGS_FOLDER: ${{ github.workspace }}/dags
       
       - name: Run Airflow DAG
         run: |
