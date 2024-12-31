@@ -4,7 +4,7 @@ from pathlib import Path
 # scripts_dir = '/home/mognc/airflow/dags/scripts'
 
 # sys.path.append(scripts_dir)
-from data_processing import collect_and_preprocess
+from scripts.data_processing import collect_and_preprocess
 
 
 from airflow import DAG
