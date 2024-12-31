@@ -43,6 +43,6 @@ jobs:
       - name: Run Airflow DAG
         run: |
           export AIRFLOW_HOME=$(pwd)/airflow
-          airflow db init
+          airflow list dags
           airflow dags trigger feature_and_training_pipeline
 

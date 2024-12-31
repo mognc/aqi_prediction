@@ -1,9 +1,9 @@
 import sys
 from pathlib import Path
 
-scripts_dir = '/home/mognc/airflow/dags/scripts'
+# scripts_dir = '/home/mognc/airflow/dags/scripts'
 
-sys.path.append(scripts_dir)
+# sys.path.append(scripts_dir)
 from data_processing import collect_and_preprocess
 
 
